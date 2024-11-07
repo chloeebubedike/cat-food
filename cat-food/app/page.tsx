@@ -17,6 +17,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
+      console.log("fetching data");
       setIsLoading(true);
       const response = await fetch(
         "http://localhost:3000/comms/your-next-delivery/f268af24-51ac-4694-b840-870829cdef8e"
